@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form {
+    // width: 450px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+}
+
+.form-group {
+    margin: 1rem;
+}
+
+.form-label:after {
+    content: '*';
+    color: red;
+}
+
+.required-fields:before {
+    content: '*';
+    color: red;
+}
+
+p.success {
+    margin: 0 auto;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    height: 40px;
+}
+
+p.error {
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    height: 40px;
+}
+
+img.image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        width: 450px;
+        top: 60px;
+        position: relative;
+    }
+}
