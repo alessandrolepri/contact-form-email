@@ -51,12 +51,12 @@ app.post("/contact", (req, res) => {
     if (error) {
       res.status(500).send({
         success: false,
-        message: "Internal error. Please try again later",
+        message: "Internal error. Please try again later"
       });
     } else {
       res.send({
         success: true,
-        message: "Message succesfully sent!!!",
+        message: "Message Successfully Sent!!!"
       });
     }
   });
