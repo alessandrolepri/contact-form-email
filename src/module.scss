@@ -1,10 +1,8 @@
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 form {
-    // width: 450px;
     margin: 0 auto;
     border: 1px solid lightgray;
 }
@@ -13,11 +11,7 @@ form {
     margin: 1rem;
 }
 
-.form-label:after {
-    content: '*';
-    color: red;
-}
-
+.form-label:after,
 .required-fields:before {
     content: '*';
     color: red;
@@ -50,5 +44,13 @@ img.image {
         width: 450px;
         top: 60px;
         position: relative;
+    }
+}
+@keyframes FadeAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
